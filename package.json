@@ -1,5 +1,5 @@
 {
-  "name": "projecteth",
+  "name": "evoting-blockchain-system",
   "version": "1.0.0",
   "main": "server.js",
   "dependencies": {
@@ -37,16 +37,16 @@
     "test": "mocha",
     "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "A blockchain-based E-voting system, created for the final year project of my college, with the help of my Project partners, Sayyam Gada and Charmee Mehta.",
+  "keywords": ["blockchain", "voting", "ethereum", "e-voting"],
+  "author": "Praneeth Sai Kolla, Sri Ram Sai Guruju, Deepak Yenduri, Amarnath Devarasetty",
+  "license": "MIT",
+  "description": "A blockchain-based E-voting system, created as the final year project. Developed by Praneeth Sai Kolla, Sri Ram Sai Guruju, Deepak Yenduri, and Amarnath Devarasetty.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mehtaAnsh/BlockChainVoting-Private.git"
+    "url": "git+https://github.com/praneethsaikolla/E-Voting-System-Using-Blockchain-Technology.git"
   },
   "bugs": {
-    "url": "https://github.com/mehtaAnsh/BlockChainVoting-Private/issues"
+    "url": "https://github.com/praneethsaikolla/E-Voting-System-Using-Blockchain-Technology/issues"
   },
-  "homepage": "https://github.com/mehtaAnsh/BlockChainVoting-Private#readme"
+  "homepage": "https://github.com/praneethsaikolla/E-Voting-System-Using-Blockchain-Technology#readme"
 }
