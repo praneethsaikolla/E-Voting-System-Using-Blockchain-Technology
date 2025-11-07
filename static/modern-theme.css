@@ -1,0 +1,265 @@
+/* =====================================================
+   Modern Dark Theme for E-Voting System
+   ===================================================== */
+
+/* CSS Variables for Easy Customization */
+:root {
+  --primary-color: #6366f1;        /* Indigo */
+  --secondary-color: #8b5cf6;      /* Purple */
+  --accent-color: #ec4899;         /* Pink */
+  --dark-bg: #0f172a;              /* Dark slate */
+  --darker-bg: #020617;            /* Darker slate */
+  --card-bg: #1e293b;              /* Card background */
+  --text-primary: #f1f5f9;         /* Light text */
+  --text-secondary: #cbd5e1;       /* Secondary text */
+  --border-color: #334155;         /* Border color */
+  --success-color: #10b981;        /* Green */
+  --warning-color: #f59e0b;        /* Amber */
+  --danger-color: #ef4444;         /* Red */
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, var(--darker-bg) 0%, var(--dark-bg) 100%);
+  color: var(--text-primary);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* Main Container */
+.main-container {
+  background: var(--dark-bg);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Header Styling */
+header, nav {
+  background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  padding: 15px 0;
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
+  border-bottom: 2px solid var(--accent-color);
+}
+
+header h1, nav h1 {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-left: 20px;
+}
+
+/* Navigation Links */
+navigation a, nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+navigation a:hover, nav a:hover {
+  color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+/* Button Styling */
+.btn, button {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
+
+.btn:hover, button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+}
+
+.btn.secondary {
+  background: var(--card-bg);
+  color: var(--text-primary);
+  border: 2px solid var(--primary-color);
+}
+
+.btn.secondary:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+/* Card Styling */
+.card, .container {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(99, 102, 241, 0.2);
+  border-color: var(--primary-color);
+}
+
+/* Input Fields */
+input, textarea, select {
+  background: var(--darker-bg);
+  color: var(--text-primary);
+  border: 2px solid var(--border-color);
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table thead {
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+table th {
+  color: white;
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-secondary);
+}
+
+table tbody tr:hover {
+  background: var(--darker-bg);
+}
+
+/* Badge/Tag Styling */
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.badge.success {
+  background: rgba(16, 185, 129, 0.2);
+  color: var(--success-color);
+  border: 1px solid var(--success-color);
+}
+
+.badge.warning {
+  background: rgba(245, 158, 11, 0.2);
+  color: var(--warning-color);
+  border: 1px solid var(--warning-color);
+}
+
+.badge.danger {
+  background: rgba(239, 68, 68, 0.2);
+  color: var(--danger-color);
+  border: 1px solid var(--danger-color);
+}
+
+/* Alert Styling */
+.alert {
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+  border-left: 4px solid;
+}
+
+.alert.success {
+  background: rgba(16, 185, 129, 0.1);
+  border-left-color: var(--success-color);
+  color: var(--success-color);
+}
+
+.alert.danger {
+  background: rgba(239, 68, 68, 0.1);
+  border-left-color: var(--danger-color);
+  color: var(--danger-color);
+}
+
+.alert.warning {
+  background: rgba(245, 158, 11, 0.1);
+  border-left-color: var(--warning-color);
+  color: var(--warning-color);
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 22px;
+    margin-left: 10px;
+  }
+  
+  .card {
+    padding: 15px;
+    margin: 10px 0;
+  }
+  
+  table {
+    font-size: 12px;
+  }
+  
+  table th, table td {
+    padding: 8px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
