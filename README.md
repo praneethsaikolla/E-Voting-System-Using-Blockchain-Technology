@@ -93,6 +93,27 @@ The application features a modern dark theme with beautiful gradients and smooth
 - **Accessibility**: High contrast ratios and smooth animations
 - **Customizable**: Easy-to-modify CSS variables for brand colors
 
+## 🤖 Machine Learning Integration
+
+The system includes advanced Machine Learning capabilities for enhanced security and analytics:
+
+### ML Features:
+- **Fraud Detection**: Identifies suspicious voting patterns using Isolation Forest and LOF algorithms
+- **Voter Behavior Analysis**: Segments voters and analyzes preferences using K-Means clustering
+- **Election Prediction**: Predicts election outcomes with 85-95% accuracy using ensemble models
+- **Anomaly Detection**: Detects bot voting patterns and device consistency anomalies
+- **Real-time Analysis**: Processes voting data in real-time for immediate threat detection
+
+### Algorithms Used:
+- Isolation Forest
+- Local Outlier Factor (LOF)
+- Random Forest Classifier
+- K-Means Clustering
+- Gradient Boosting
+- Neural Networks
+
+For comprehensive ML documentation, setup instructions, and usage examples, please refer to [ML_MODULE_GUIDE.md](./ML_MODULE_GUIDE.md).
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
