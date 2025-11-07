@@ -82,6 +82,17 @@ Install MetaMask extension (https://metamask.io/download.html) and make sure to 
 - **Deepak Yenduri**
 - **Amarnath Devarasetty**
 
+## 🎨 Design & Theme
+
+The application features a modern dark theme with beautiful gradients and smooth animations. For detailed information about the theme, including customization options and component styling, please refer to [THEME_GUIDE.md](./THEME_GUIDE.md).
+
+### Theme Features:
+- **Dark Mode**: Eye-friendly dark interface with carefully chosen colors
+- **Gradient Design**: Modern gradient backgrounds for visual appeal
+- **Responsive**: Fully responsive design for mobile and desktop
+- **Accessibility**: High contrast ratios and smooth animations
+- **Customizable**: Easy-to-modify CSS variables for brand colors
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
